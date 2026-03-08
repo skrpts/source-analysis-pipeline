@@ -1,0 +1,40 @@
+# --- Identity ---
+name: "source-analysis-pipeline"
+display_name: "Source Analysis Pipeline"
+description: "Extract citations, assess methodology, compare arguments, and summarise sources"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/source-analysis-pipeline"
+
+# --- Discovery (Hub) ---
+category: "researcher"
+tags:
+  - "analysis"
+  - "sources"
+  - "methodology"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+    - "openai-gpt4"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 4
+  prompts: 4
+  workflows: 1
+  services: 0
+  sources: 2
+  documents: 0
+  assets: 1
+  total: 12
