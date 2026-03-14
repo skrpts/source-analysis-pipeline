@@ -5,7 +5,7 @@ title: Citation Extraction
 description: "Identifies and formats citations from text"
 tags: [Tested]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: apa-7th-edition
     type: references

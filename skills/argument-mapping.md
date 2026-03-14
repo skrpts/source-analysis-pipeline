@@ -5,7 +5,7 @@ title: Argument Mapping
 description: "Structures claims, evidence, and counter-arguments from source material"
 tags: [Tested]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
 ---
 

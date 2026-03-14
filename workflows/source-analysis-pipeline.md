@@ -21,9 +21,7 @@ connections:
     type: uses
   - target: summarise-source
     type: uses
-  - target: anthropic-claude
-    type: runs_on
-  - target: openai-gpt4
+  - target: llm-service
     type: runs_on
 metadata:
   estimated_duration: "15-30 minutes"
@@ -74,3 +72,45 @@ Invoke the **source-summarisation** skill via the **summarise-source** prompt to
 - If citations are in an unfamiliar format, extract what is available and flag for manual completion
 - If the argument structure is unclear (e.g., primarily descriptive text), note this in the argument map
 - If multiple sources are provided, process each independently then produce a comparative summary
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.source_text}}` | Yes | Source text | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.target_citation_style}}` | Yes | target citation style | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.research_question_context}}` | Yes | research question context | `Paste a short brief describing the goal, audience, and constraints.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Formatted reference list | Formatted reference list with quality flags |
+| Methodology assessment | Methodology assessment with quality rating |
+| Structured argument map | Structured argument map with strength assessment |
+| Complete source summary ready for use in a literature review or research proposal | Complete source summary ready for use in a literature review or research proposal |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Source Text: "Paste the relevant brief, notes, source material, or dataset here."
+Target Citation Style: "Paste the relevant brief, notes, source material, or dataset here."
+Research Question Context: "Paste a short brief describing the goal, audience, and constraints."
+```
+
