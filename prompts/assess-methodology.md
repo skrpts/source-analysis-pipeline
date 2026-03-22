@@ -3,7 +3,7 @@ type: prompt
 id: assess-methodology
 title: Assess Methodology
 description: "Evaluates a research methodology for rigour and appropriateness"
-tags: []
+tags: [Production]
 connections:
   - target: methodology-assessment
     type: derived_from
@@ -30,9 +30,9 @@ You are a research methodologist. Evaluate the methodology described below. Asse
 
 ### Inputs
 
-- **Research question:** {question}
-- **Methodology description:** {methodology}
-- **Field-specific standards:** {standards}
+- **Research question:** Using the research question context from Stage 1.
+- **Methodology description:** [the methodology described in the source text]
+- **Field-specific standards:** {{input.field_specific_standards}}
 
 ## Formatting Rules
 

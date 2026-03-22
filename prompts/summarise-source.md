@@ -3,7 +3,7 @@ type: prompt
 id: summarise-source
 title: Summarise Source
 description: "Produces a structured summary of an academic paper"
-tags: []
+tags: [Production]
 connections:
   - target: source-summarisation
     type: derived_from
@@ -31,9 +31,7 @@ You are a research assistant. Read the academic paper below and produce a struct
 
 ### Inputs
 
-- **Paper text:** {paper}
-- **Research question:** {question}
-- **Citation style:** {style}
+This prompt receives all outputs from the previous stages. Use the source text, research question context, and citation style provided to Stage 1, together with the citation analysis from Stage 1, the methodology assessment from Stage 2, and the argument map from Stage 3, to produce the final complete summary.
 
 ## Formatting Rules
 

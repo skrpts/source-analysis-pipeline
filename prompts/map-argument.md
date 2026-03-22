@@ -3,7 +3,7 @@ type: prompt
 id: map-argument
 title: Map Argument
 description: "Structures the argumentative components of a source text"
-tags: []
+tags: [Production]
 connections:
   - target: argument-mapping
     type: derived_from
@@ -32,8 +32,7 @@ Conclude with an overall assessment of argument strength: strong, moderate, or w
 
 ### Inputs
 
-- **Source text:** {text}
-- **Focus area (optional):** {focus}
+This prompt receives all outputs from the previous stages. Use the source text provided to Stage 1 and the research question context from Stage 1 to map the argumentative structure of the source.
 
 ## Formatting Rules
 

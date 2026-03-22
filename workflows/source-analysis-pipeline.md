@@ -30,7 +30,7 @@ metadata:
 
 ## Overview
 
-This workflow conducts a thorough analysis of one or more academic sources. It extracts and formats citations, assesses the methodology, maps the argumentative structure, and produces a comprehensive summary. The outputs can feed into a literature review or inform a research proposal.
+This workflow conducts a thorough analysis of one or more academic sources. It extracts and formats citations, assesses the methodology, maps the argumentative structure, and produces a structured summary. The outputs can feed into a literature review or inform a research proposal.
 
 ## Pipeline Stages
 
@@ -62,7 +62,7 @@ Invoke the **argument-mapping** skill via the **map-argument** prompt to identif
 
 **Input:** Source text(s), all outputs from Stages 1-3
 
-Invoke the **source-summarisation** skill via the **summarise-source** prompt to produce a comprehensive summary incorporating the citation, methodology, and argument analyses.
+Invoke the **source-summarisation** skill via the **summarise-source** prompt to produce a complete summary incorporating the citation, methodology, and argument analyses.
 
 **Output:** Complete source summary ready for use in a literature review or research proposal.
 
@@ -77,9 +77,10 @@ Invoke the **source-summarisation** skill via the **summarise-source** prompt to
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.source_text}}` | Yes | Source text | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.target_citation_style}}` | Yes | target citation style | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.research_question_context}}` | Yes | research question context | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.source_text}}` | Yes | The academic source text to analyse | `Paste the full text of the article, paper, or chapter here` |
+| `{{input.target_citation_style}}` | Yes | Target citation style for formatted references | `APA 7th edition` |
+| `{{input.research_question_context}}` | Yes | Your research question, to assess relevance against | `How does social media usage affect adolescent wellbeing?` |
+| `{{input.field_specific_standards}}` | No | Field-specific methodological standards for assessment | `CONSORT for RCTs, APA reporting standards` |
 
 ## Outputs
 

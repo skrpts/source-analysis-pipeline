@@ -3,7 +3,7 @@ type: prompt
 id: extract-citations
 title: Extract Citations
 description: "Identifies and extracts citations from source text"
-tags: []
+tags: [Production]
 connections:
   - target: citation-extraction
     type: derived_from
@@ -27,9 +27,9 @@ You are a research librarian. Extract all citations from the text below and form
 
 ### Inputs
 
-- **Source text:** {text}
-- **Target citation style:** {style}
-- **Additional context:** {context}
+- **Source text:** {{input.source_text}}
+- **Target citation style:** {{input.target_citation_style}}
+- **Additional context:** {{input.research_question_context}}
 
 ## Formatting Rules
 
