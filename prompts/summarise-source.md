@@ -31,7 +31,12 @@ You are a research assistant. Read the academic paper below and produce a struct
 
 ### Inputs
 
-This prompt receives all outputs from the previous stages. Use the source text, research question context, and citation style provided to Stage 1, together with the citation analysis from Stage 1, the methodology assessment from Stage 2, and the argument map from Stage 3, to produce the final complete summary.
+- **Source text:** {{input.source_text}}
+- **Research question context:** {{input.research_question_context}}
+- **Target citation style:** {{input.target_citation_style}}
+- **Citation analysis:** {{steps.extract-citations.output}}
+- **Methodology assessment:** {{steps.assess-methodology.output}}
+- **Argument map:** {{steps.map-argument.output}}
 
 ## Formatting Rules
 

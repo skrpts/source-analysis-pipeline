@@ -2,7 +2,7 @@
 name: "source-analysis-pipeline"
 display_name: "Source Analysis Pipeline"
 description: "Extract citations, assess methodology, compare arguments, and summarise sources"
-version: "1.2.0"
+version: "1.3.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---

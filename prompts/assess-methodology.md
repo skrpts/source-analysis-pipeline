@@ -30,8 +30,8 @@ You are a research methodologist. Evaluate the methodology described below. Asse
 
 ### Inputs
 
-- **Research question:** Using the research question context from Stage 1.
-- **Methodology description:** [the methodology described in the source text]
+- **Research question:** {{input.research_question_context}}
+- **Methodology description:** [the methodology described in the source text: {{input.source_text}}]
 - **Field-specific standards:** {{input.field_specific_standards}}
 
 ## Formatting Rules

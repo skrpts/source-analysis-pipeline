@@ -32,7 +32,10 @@ Conclude with an overall assessment of argument strength: strong, moderate, or w
 
 ### Inputs
 
-This prompt receives all outputs from the previous stages. Use the source text provided to Stage 1 and the research question context from Stage 1 to map the argumentative structure of the source.
+- **Source text:** {{input.source_text}}
+- **Research question context:** {{input.research_question_context}}
+- **Citation analysis:** {{steps.extract-citations.output}}
+- **Methodology assessment:** {{steps.assess-methodology.output}}
 
 ## Formatting Rules
 
