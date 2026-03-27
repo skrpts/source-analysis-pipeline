@@ -22,8 +22,11 @@ tags:
 
 # --- Security & Access ---
 requires:
-  services: []
-  permissions: []
+  services:
+    - "llm-service"
+  permissions:
+    - "network:doi.org"
+    - "network:www.example.com"
   data_handling: []
 
 # --- Contents ---
