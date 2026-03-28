@@ -11,13 +11,13 @@ connections:
 
 ## Capability
 
-Reads academic papers and produces structured summaries covering research question, methodology, key findings, limitations, and relevance to the reviewer's topic.
+Reads academic papers and produces structured summaries covering research question, methodology, key findings, limitations, and relevance to the reviewer's topic. Extracts quotable passages and identifies how each paper contributes to the broader field.
 
 ## When to Use
 
 - Processing a batch of papers identified through literature search
 - Creating an evidence table for a systematic review
-- Quickly assessing whether a paper is relevant enough to include
+- Quickly assessing whether a paper is relevant enough to include in a review
 
 ## Inputs
 

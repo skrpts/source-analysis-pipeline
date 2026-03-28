@@ -7,6 +7,8 @@ tags: [Production]
 connections:
   - target: llm-service
     type: runs_on
+  - target: prisma-2020-guidelines
+    type: references
 ---
 
 ## Capability
@@ -15,14 +17,15 @@ Evaluates research methodology for rigour, appropriateness, and alignment with t
 
 ## When to Use
 
-- Assessing the quality of methodology in papers during source analysis
+- Designing a methodology for a new study
+- Reviewing the methodology section of a research proposal
+- Assessing the quality of methodology in papers during a literature review
 - Comparing methodological approaches across studies
-- Evaluating the strength of evidence behind a claim
 
 ## Inputs
 
-Research question, methodology description, field-specific standards
+Research question, proposed or existing methodology description, field-specific methodological standards
 
 ## Outputs
 
-Methodology assessment: strengths, weaknesses, validity threats, reliability concerns, and overall quality rating
+Methodology assessment: strengths, weaknesses, validity threats (internal and external), reliability concerns, ethical considerations, and recommendations for improvement
