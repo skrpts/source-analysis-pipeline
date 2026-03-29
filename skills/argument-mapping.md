@@ -3,7 +3,7 @@ type: skill
 id: argument-mapping
 title: Argument Mapping
 description: "Structures claims, evidence, and counter-arguments from source material"
-tags: [Tested]
+tags: [Tested, analysis:source, writing:academic]
 connections:
   - target: llm-service
     type: runs_on

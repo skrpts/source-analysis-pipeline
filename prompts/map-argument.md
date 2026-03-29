@@ -3,7 +3,7 @@ type: prompt
 id: map-argument
 title: Map Argument
 description: "Structures the argumentative components of a source text"
-tags: [Production]
+tags: [Production, analysis:source, writing:academic]
 connections:
   - target: argument-mapping
     type: derived_from

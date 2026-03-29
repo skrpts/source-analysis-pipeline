@@ -3,7 +3,7 @@ type: source
 id: chicago-manual-of-style
 title: Chicago Manual of Style
 description: "Citation and formatting guidelines per the Chicago Manual of Style, 17th edition"
-tags: [Production]
+tags: [Production, analysis:source, research:citations]
 connections: []
 ---
 

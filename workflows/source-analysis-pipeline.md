@@ -3,7 +3,7 @@ type: workflow
 id: source-analysis-pipeline
 title: Source Analysis Pipeline
 description: "Extract citations, assess methodology, compare arguments, and summarise sources"
-tags: [Tested]
+tags: [Tested, analysis:source, research:citations, utility:extraction]
 connections:
   - target: citation-extraction
     type: uses
