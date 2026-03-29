@@ -3,7 +3,7 @@ type: asset
 id: citation-format-templates
 title: Citation Format Templates
 description: "Quick-reference templates for common citation formats across styles"
-tags: [Production, analysis:source, research:citations]
+tags: [Production, Citations, Research]
 connections: []
 ---
 

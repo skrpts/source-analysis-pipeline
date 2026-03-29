@@ -3,7 +3,7 @@ type: prompt
 id: extract-citations
 title: Extract Citations
 description: "Identifies and extracts citations from source text"
-tags: [Production, analysis:source, research:citations, utility:extraction]
+tags: [Production, Automation, Citations, Research]
 connections:
   - target: citation-extraction
     type: derived_from

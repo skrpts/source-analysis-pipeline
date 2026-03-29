@@ -3,7 +3,7 @@ type: skill
 id: citation-extraction
 title: Citation Extraction
 description: "Identifies and formats citations from text"
-tags: [Tested, analysis:source, research:citations]
+tags: [Tested, Citations, Research]
 connections:
   - target: llm-service
     type: runs_on
