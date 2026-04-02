@@ -29,7 +29,7 @@ Subsequent notes: Last, "Short Title," page.
 Last, First. *Title of Book*. Place: Publisher, Year.
 
 #### Journal Article
-Last, First. "Title of Article." *Journal Title* volume, no. issue (Year): page-page. https://doi.org/xxxxx.
+Last, First. "Title of Article." *Journal Title* volume, no. issue (Year): page-page. `https://doi.org/xxxxx.`
 
 ## Author-Date System
 
@@ -43,7 +43,7 @@ Last, First. "Title of Article." *Journal Title* volume, no. issue (Year): page-
 Author Last, First. Year. *Title of Book*. Place: Publisher.
 
 #### Journal Article
-Author Last, First. Year. "Title of Article." *Journal Title* volume (issue): page-page. https://doi.org/xxxxx.
+Author Last, First. Year. "Title of Article." *Journal Title* volume (issue): page-page. `https://doi.org/xxxxx.`
 
 ## Key Differences from APA
 
