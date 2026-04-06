@@ -13,14 +13,6 @@ connections:
     type: uses
   - target: source-summarisation
     type: uses
-  - target: extract-citations
-    type: uses
-  - target: assess-methodology
-    type: uses
-  - target: map-argument
-    type: uses
-  - target: summarise-source
-    type: uses
   - target: llm-service
     type: runs_on
   - target: evidence-claim-check
