@@ -34,8 +34,8 @@ Conclude with an overall assessment of argument strength: strong, moderate, or w
 
 - **Source text:** {{input.source_text}}
 - **Research question context:** {{input.research_question_context}}
-- **Citation analysis:** {{steps.extract-citations.output}}
-- **Methodology assessment:** {{steps.assess-methodology.output}}
+- **Citation analysis:** {{steps.Citation Extraction.output}}
+- **Methodology assessment:** {{steps.Methodology Assessment.output}}
 
 ## Formatting Rules
 

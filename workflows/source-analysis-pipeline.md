@@ -17,6 +17,8 @@ connections:
     type: runs_on
   - target: evidence-claim-check
     type: uses
+  - target: gap-analysis
+    type: uses
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
