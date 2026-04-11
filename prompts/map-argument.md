@@ -4,6 +4,18 @@ id: map-argument
 title: Map Argument
 description: "Structures the argumentative components of a source text"
 tags: [Production, Academic, Research]
+inputs:
+  source_text:
+    label: "Source Text"
+    description: "The text to analyse or process"
+    example: "[Paste the full text here]"
+    required: true
+    type: text
+  research_question_context:
+    label: "Research Question Context"
+    description: "Research Question Context"
+    required: true
+    type: text
 connections:
   - target: argument-mapping
     type: derived_from
