@@ -24,16 +24,22 @@ metadata:
   trigger: manual
 execution:
   - skill: "citation-extraction"
+    step_type: "synthesis"
   - skill: "argument-mapping"
     input_from: "citation-extraction"
+    step_type: "synthesis"
   - skill: "source-summarisation"
     input_from: "argument-mapping"
+    step_type: "synthesis"
   - skill: "gap-analysis"
     input_from: "source-summarisation"
+    step_type: "synthesis"
   - skill: "methodology-assessment"
     input_from: "gap-analysis"
+    step_type: "review"
   - skill: "evidence-claim-check"
     input_from: "gap-analysis"
+    step_type: "review"
 ---
 
 ## Overview
