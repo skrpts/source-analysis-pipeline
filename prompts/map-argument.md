@@ -14,6 +14,7 @@ inputs:
   research_question_context:
     label: "Research Question Context"
     description: "Research Question Context"
+    example: "Sleep duration and academic performance in UK university students — examining whether self-reported sleep quality predicts exam scores"
     required: true
     type: text
 connections:
