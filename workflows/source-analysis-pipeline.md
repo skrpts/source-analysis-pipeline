@@ -22,6 +22,14 @@ connections:
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
+output_step: "gap-analysis"
+composite_steps:
+  - "citation-extraction"
+  - "methodology-assessment"
+  - "argument-mapping"
+  - "source-summarisation"
+  - "evidence-claim-check"
+  - "gap-analysis"
 execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
