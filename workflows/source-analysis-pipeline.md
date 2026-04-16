@@ -33,6 +33,8 @@ composite_steps:
 execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
+    context:
+      citation_style: "Harvard"
   - skill: "argument-mapping"
     step_type: "synthesis"
   - skill: "source-summarisation"
