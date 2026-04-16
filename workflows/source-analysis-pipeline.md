@@ -13,6 +13,8 @@ connections:
     type: uses
   - target: source-summarisation
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: evidence-claim-check
@@ -22,7 +24,7 @@ connections:
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
-output_step: "gap-analysis"
+output_step: "language-polish"
 composite_steps:
   - "citation-extraction"
   - "methodology-assessment"
@@ -30,6 +32,7 @@ composite_steps:
   - "source-summarisation"
   - "evidence-claim-check"
   - "gap-analysis"
+  - "language-polish"
 execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
@@ -46,6 +49,8 @@ execution:
       step_type: "review"
   - skill: "methodology-assessment"
     step_type: "review"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
