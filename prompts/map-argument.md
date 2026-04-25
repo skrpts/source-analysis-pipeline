@@ -10,7 +10,8 @@ inputs:
     description: "The text to analyse or process"
     example: "[Paste the full text here]"
     required: true
-    type: text
+    type: file
+    accept: ".pdf,.txt,.md,.docx"
   research_question_context:
     label: "Research Question Context"
     description: "Research Question Context"

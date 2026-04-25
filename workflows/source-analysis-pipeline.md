@@ -36,6 +36,7 @@ composite_steps:
 execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
+    prompt: "source-analysis-brief"
     context:
       citation_style: "Harvard"
   - skill: "argument-mapping"
