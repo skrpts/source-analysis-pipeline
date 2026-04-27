@@ -40,17 +40,23 @@ execution:
     context:
       citation_style: "Harvard"
   - skill: "argument-mapping"
+    prompt: "map-argument"
     step_type: "synthesis"
   - skill: "source-summarisation"
+    prompt: "summarise-source"
     step_type: "synthesis"
   - skill: "gap-analysis"
+    prompt: "identify-research-gaps"
     step_type: "synthesis"
   - parallel:
     - skill: "evidence-claim-check"
+      prompt: "check-evidence-claims"
       step_type: "review"
   - skill: "methodology-assessment"
+    prompt: "assess-methodology"
     step_type: "review"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
