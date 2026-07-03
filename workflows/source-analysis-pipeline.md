@@ -37,26 +37,35 @@ execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
     prompt: "source-analysis-brief"
+    output: { name: "citations", type: "list" }
     context:
       citation_style: "Harvard"
   - skill: "argument-mapping"
     prompt: "map-argument"
     step_type: "synthesis"
+    output: { name: "argument_map", type: "text" }
   - skill: "source-summarisation"
     prompt: "summarise-source"
     step_type: "synthesis"
+    output: { name: "summaries", type: "text" }
+    bindings:
+      source_text:
+        from_input: "source_text"
   - skill: "gap-analysis"
     prompt: "identify-research-gaps"
     step_type: "synthesis"
+    output: { name: "research_gaps", type: "text" }
   - parallel:
     - skill: "evidence-claim-check"
       prompt: "check-evidence-claims"
       step_type: "review"
+      output: { name: "evidence_report", type: "text" }
       context:
         evidence_rigour: "Standard"
   - skill: "methodology-assessment"
     prompt: "assess-methodology"
     step_type: "review"
+    output: { name: "methodology_assessment", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
