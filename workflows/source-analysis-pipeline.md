@@ -2,7 +2,7 @@
 type: workflow
 id: source-analysis-pipeline
 title: Source Analysis Pipeline
-description: "Extract citations, assess methodology, compare arguments, and summarise sources"
+description: "Extract citations, assess methodology, compare arguments, and summarize sources"
 tags: [Tested, Automation, Citations, Research]
 connections:
   - target: citation-extraction
@@ -104,11 +104,11 @@ Invoke the **argument-mapping** skill via the **map-argument** prompt to identif
 
 **Output:** Structured argument map with strength assessment.
 
-### Stage 4: Source Summarisation
+### Stage 4: Source Summarization
 
 **Input:** Source text(s), all outputs from Stages 1-3
 
-Invoke the **source-summarisation** skill via the **summarise-source** prompt to produce a complete summary incorporating the citation, methodology, and argument analyses.
+Invoke the **source-summarisation** skill via the **summarise-source** prompt to produce a complete summary incorporating the citation, methodology, and argument analyzes.
 
 **Output:** Complete source summary ready for use in a literature review or research proposal.
 
@@ -123,7 +123,7 @@ Invoke the **source-summarisation** skill via the **summarise-source** prompt to
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.source_text}}` | Yes | The academic source text to analyse | `Paste the full text of the article, paper, or chapter here` |
+| `{{input.source_text}}` | Yes | The academic source text to analyze | `Paste the full text of the article, paper, or chapter here` |
 | `{{input.target_citation_style}}` | Yes | Target citation style for formatted references | `APA 7th edition` |
 | `{{input.research_question_context}}` | Yes | Your research question, to assess relevance against | `How does social media usage affect adolescent wellbeing?` |
 | `{{input.field_specific_standards}}` | No | Field-specific methodological standards for assessment | `CONSORT for RCTs, APA reporting standards` |
@@ -142,7 +142,7 @@ Invoke the **source-summarisation** skill via the **summarise-source** prompt to
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

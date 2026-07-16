@@ -7,7 +7,7 @@ tags: [Production, Academic, Research]
 inputs:
   source_text:
     label: "Source Text"
-    description: "The text to analyse or process"
+    description: "The text to analyze or process"
     example: "[Paste the full text here]"
     required: true
     type: file
@@ -32,7 +32,7 @@ Drives the argument mapping skill by identifying and structuring claims, evidenc
 
 ## Prompt
 
-You are a critical analysis specialist. Analyse the source text below and produce a structured argument map. Identify:
+You are a critical analysis specialist. Analyze the source text below and produce a structured argument map. Identify:
 
 1. **Central claim** — the main thesis or argument being made
 2. **Supporting premises** — the key reasons given to support the central claim

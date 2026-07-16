@@ -7,7 +7,7 @@ tags: [Production]
 inputs:
   source_text:
     label: "Source Text"
-    description: "The academic source or document to analyse"
+    description: "The academic source or document to analyze"
     example: "Paste source text here"
     required: true
     type: file
