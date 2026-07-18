@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.29
+GH#863 Wave 3 (Tier-3 tail) — the output_step (language-polish) was polishing its positional-previous step (a validation/review), not the deliverable, because polish-language was pinned pre-`source`-slot. Repinned polish-language 1.0.1→1.0.6 and bound language-polish `source` ← "Research Gap Identification (gap-analysis)" (the real deliverable producer). No new steps; no other change.
+
 ## v1.1.28
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 
