@@ -129,8 +129,12 @@ Invoke the **source-summarisation** skill via the **summarise-source** prompt to
 |------|----------|-------------|---------|
 | `{{input.source_text}}` | Yes | The academic source text to analyze | `Paste the full text of the article, paper, or chapter here` |
 | `{{input.target_citation_style}}` | Yes | Target citation style for formatted references | `APA 7th edition` |
-| `{{input.research_question_context}}` | Yes | Your research question, to assess relevance against | `How does social media usage affect adolescent wellbeing?` |
+| `{{input.research_question}}` | Yes | The specific research question to address | `How does sleep duration affect cognitive performance in university students?` |
 | `{{input.field_specific_standards}}` | No | Field-specific methodological standards for assessment | `CONSORT for RCTs, APA reporting standards` |
+| `{{input.known_limitations}}` | Yes | Known limitations or constraints in the existing literature | `Most studies use self-reported data. Limited longitudinal evidence.` |
+| `{{input.literature_summary}}` | Yes | A summary of the existing literature on the topic | `Three meta-analyses have examined this relationship...` |
+| `{{input.research_question_context}}` | Yes | Research Question Context | `Sleep duration and academic performance in UK university students — examining whether self-reported sleep quality predicts exam scores` |
+| `{{input.research_topic}}` | Yes | The research area or question to investigate | `Machine learning applications in early disease detection` |
 
 ## Outputs
 
