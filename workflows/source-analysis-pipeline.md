@@ -55,6 +55,10 @@ execution:
     prompt: "identify-research-gaps"
     step_type: "synthesis"
     output: { name: "research_gaps", type: "text" }
+    bindings:
+      source:
+        from_step: "Source Summarization"
+        field: output
   - parallel:
     - skill: "evidence-claim-check"
       prompt: "check-evidence-claims"
@@ -62,10 +66,18 @@ execution:
       output: { name: "evidence_report", type: "text" }
       context:
         evidence_rigour: "Standard"
+      bindings:
+        source:
+          from_step: "Source Summarization"
+          field: output
   - skill: "methodology-assessment"
     prompt: "assess-methodology"
     step_type: "review"
     output: { name: "methodology_assessment", type: "text" }
+    bindings:
+      source:
+        from_step: "Research Gap Identification"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"

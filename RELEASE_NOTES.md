@@ -1,5 +1,10 @@
 # Release Notes
 
+## v1.1.32
+GH#1100 consumer wave batch 5 — declare the data flow these steps were resolving positionally. 3 binding(s) added: `identify-research-gaps` ← Source Summarization; `check-evidence-claims` ← Source Summarization; `assess-methodology` ← Research Gap Identification. Each dependency was also re-pinned to the version that introduced its `source` slot, with checksums resolved from the live catalogue rather than transcribed — a binding against a pin below the slot version is declared but inert, which the canonical scan reports as `execution_bindings_unused_key`.
+
+`check-evidence-claims` is bound to **Source Summarization**, not to the entry before its parallel block. Its slot label ("Document to Review") is generic, so the fallback would be positional — but the entry before the block is the gap analysis, and the document under review in a source-analysis pipeline is the source summaries.
+
 ## v1.1.31
 GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. documented research_topic. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
 
